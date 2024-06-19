@@ -5,10 +5,40 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced JS HW4</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <form class="search-form" id="search-form">
+          <input 
+          class="search-input"
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."/>
+          <button class="search-btn" type="submit">
+            <svg class="search-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
 
+    <main>
+      <section class="main-content container">
+        <div class="gallery"></div>
+        <button class="js-load btn-hidden">Load More</button>
+
+        <div class="js-guard"></div>
+      </section>
+    </main>
 
     <script type="module" src="./js/main.js"></script>
   </body>

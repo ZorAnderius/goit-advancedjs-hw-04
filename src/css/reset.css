@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 /* Reset styles */
 h1,
 h2,
@@ -32,4 +36,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
